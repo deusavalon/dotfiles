@@ -13,6 +13,7 @@ alias p="cd ~/Projects"
 alias dotfiles="cd ~/Projects/personal/dotfiles"
 alias o='open .'
 alias ls='ls -lah'
+alias e='exa -lah --git --time-style long-iso -g --group-directories-first'
 
 # Network
 alias dig="dig @8.8.8.8 ANY +noall +answer $1"

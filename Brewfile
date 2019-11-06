@@ -11,6 +11,7 @@ brew "tree"
 brew "wget"
 brew "wifi-password"
 brew "pyenv"
+brew "bat"
 
 cask "docker"
 cask "font-inconsolata"

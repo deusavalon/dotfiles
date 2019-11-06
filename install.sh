@@ -17,6 +17,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
 git clone https://github.com/djui/alias-tips.git ~/.oh-my-zsh/custom/plugins/alias-tips
 
+echo "Installing powerline fonts..."
+git clone https://github.com/powerline/fonts.git ~/
+
+
 echo "Installing Google Cloud SDK..."
 brew cask install google-cloud-sdk
 
