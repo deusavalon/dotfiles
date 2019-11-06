@@ -29,10 +29,6 @@ alias flush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
-# Git
-alias gpush='git push origin $(git rev-parse --abbrev-ref HEAD)'
-alias gpull='git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)'
-alias gtag='git tag -s $1'
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
@@ -59,6 +55,21 @@ alias npmls='npm list --depth=0 "$@" 2>/dev/null'
 alias pycclean='find . -name \*.pyc -delete'
 alias travis='docker run -it --rm -v `pwd`:/data -v $HOME/.travis:/root/.travis jpadilla/travis-cli $@'
 alias sshf='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+
+# Usefull aliases from zshrc file
+alias cat="bat"
+alias ccp="clipcopy"
+alias cp="cp -irv"
+alias cpa="clippaste"
+alias diff="diff --color=auto"
+alias grep="grep --color=auto"
+alias pp="prettyping --nolegend"
+alias q="exit"
+alias rm="rm -irv"
+alias tmux="tmux -u"
+alias tmuxm="tmux new-session \; split-window -h \; split-window -v \; attach"
+alias vimrc="vim ~/.vimrc"
+alias zshrc="vim ~/.zshrc"
 
 # Functions
 function ip() {

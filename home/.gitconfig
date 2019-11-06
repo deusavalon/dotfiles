@@ -1,7 +1,6 @@
 [user]
-  name = José Padilla
-  email = jpadilla@webapplicate.com
-  signingkey = B55434E2
+  name = Denis Heinen
+  email = denis.heinen@hotmail.de
 
 [core]
   excludesfile = ~/.gitignore

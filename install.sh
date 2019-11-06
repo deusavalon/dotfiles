@@ -8,21 +8,38 @@ echo "Installing dependencies from Brewfile..."
 brew tap Homebrew/bundle
 brew bundle
 
+echo "Installing oh-my-zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "Installing zsh plugins..."
+git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
+git clone https://github.com/djui/alias-tips.git ~/.oh-my-zsh/custom/plugins/alias-tips
+
+echo "Installing Google Cloud SDK..."
+brew cask install google-cloud-sdk
+
+echo "Installing iTerm2 Shell Integration..."
+curl -sL https://iterm2.com/shell_integration/zsh > ~/.iterm2_shell_integration.zsh
+
+echo "Installing poetry..."
+curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+source $HOME/.poetry/env
+poetry completions zsh > $HOME/.zsh/completions/_poetry
+
+echo "Configuring pyenv and installing python 3.6..."
+pyenv install -s `pyenv install-latest --print 3.6`
+
 # Accept Xcode license
 sudo xcodebuild -license accept
+# Make git use diff-so-fancy for every output
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
-# Install nvm
-echo "Installing nvm..."
-curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE=~/.extras bash
-source ~/.profile
-
-# Install latest release of node
-echo "Installing node..."
-nvm install lts/*  --latest-npm
+source ~/.zshrc
 
 # VSCode packages
 echo "Installing VSCode Packages..."
 xargs -n 1 code --install-extension < ~/Projects/personal/dotfiles/vscode/extensions.txt
 
-echo
 echo "==> Done!"

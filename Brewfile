@@ -7,27 +7,15 @@ brew "bash-completion"
 brew "diff-so-fancy"
 brew "git"
 brew "jq"
-brew "mas"
 brew "tree"
 brew "wget"
 brew "wifi-password"
+brew "pyenv"
 
 cask "docker"
 cask "font-inconsolata"
 cask "font-source-code-pro"
 cask "insomnia"
 cask "iterm2"
-cask "robo-3t"
-cask "spotify"
 cask "the-unarchiver"
-cask "viscosity"
 cask "visual-studio-code"
-
-mas "1Password 7", id: 1333542190
-mas "Bear", id: 1091189122
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Slack", id: 803453959
-mas "Spark", id: 1176895641
-mas "Xcode", id: 497799835

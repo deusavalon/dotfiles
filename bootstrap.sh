@@ -13,7 +13,7 @@ rm /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 echo "Cloning dotfiles repo..."
 mkdir -p ~/Projects/personal
 cd ~/Projects/personal
-git clone https://github.com/jpadilla/dotfiles.git
+git clone https://github.com/deusavalon/dotfiles.git
 cd dotfiles
 
 # Defaults

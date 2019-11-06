@@ -32,4 +32,4 @@ echo "--> Done!"
 unset getFilesInDir
 unset symlinkFilesTo
 
-source ~/.profile
+source ~/.zshrc
