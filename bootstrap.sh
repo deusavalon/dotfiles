@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e -x
 echo "==> Running bootstrap.sh"
 
 echo "Updating OSX..."
