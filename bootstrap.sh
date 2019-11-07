@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "==> Running bootstrap.sh"
 
-echo "Updating OSX..."
-sudo softwareupdate --install --all --verbose
+# echo "Updating OSX..."
+# sudo softwareupdate --install --all --verbose
 
 # echo "Installing Xcode command line tools..."
 # touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
