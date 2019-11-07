@@ -35,5 +35,6 @@ unset symlinkFilesTo
 source ~/.zshrc
 
 if [ -f "$HOME/.zshrc.pre-oh-my-zsh" ]; then
-  echo "source ~/.zshrc.pre-oh-my-zsh" >> $HOME/.zshrc
+  # echo "source ~/.zshrc.pre-oh-my-zsh" >> $HOME/.zshrc
+  cat ~/.zshrc.pre-oh-my-zsh > ~/.zshrc
 fi
