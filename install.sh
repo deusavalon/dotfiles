@@ -18,11 +18,11 @@ git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/c
 git clone https://github.com/djui/alias-tips.git ~/.oh-my-zsh/custom/plugins/alias-tips
 
 echo "Installing powerline fonts..."
-git clone https://github.com/powerline/fonts.git ~/
-
-
-echo "Installing Google Cloud SDK..."
-brew cask install google-cloud-sdk
+git clone https://github.com/powerline/fonts.git
+(
+    cd fonts
+    ./install.sh
+)
 
 echo "Installing iTerm2 Shell Integration..."
 curl -sL https://iterm2.com/shell_integration/zsh > ~/.iterm2_shell_integration.zsh
@@ -32,11 +32,12 @@ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.p
 source $HOME/.poetry/env
 poetry completions zsh > $HOME/.zsh/completions/_poetry
 
-echo "Configuring pyenv and installing python 3.6..."
-pyenv install -s `pyenv install-latest --print 3.6`
+echo "Installing python 3.6..."
+pyenv install -s 3.7.5
 
 # Accept Xcode license
 sudo xcodebuild -license accept
+
 # Make git use diff-so-fancy for every output
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 

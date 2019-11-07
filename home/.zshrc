@@ -28,16 +28,13 @@ ZSH_THEME="sunrise"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
-
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-
 source $HOME/.iterm2_shell_integration.zsh
 
 
 
-
+#Added /include CFLAGS so XCode is working properly
 export CFLAGS="$CFLAGS -I$(xcrun --show-sdk-path)/usr/include"
 
 

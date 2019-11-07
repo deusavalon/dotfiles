@@ -33,3 +33,7 @@ unset getFilesInDir
 unset symlinkFilesTo
 
 source ~/.zshrc
+
+if [ -f "$HOME/.zshrc.pre-oh-my-zsh" ]; then
+  echo "source ~/.zshrc" >> $HOME/.zshrc.pre-oh-my-.zsh
+fi

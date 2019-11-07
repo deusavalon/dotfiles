@@ -16,11 +16,13 @@ cd ~/Projects/personal
 git clone https://github.com/deusavalon/dotfiles.git
 cd dotfiles
 
-# Defaults
+
+# Installs
+./install.sh
+
+# Defaults + Dockutil configuration
 ./osx.sh
 
 # Symlinks
 ./symlinks.sh
 
-# Installs
-./install.sh
