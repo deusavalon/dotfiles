@@ -32,19 +32,19 @@ curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.p
 source $HOME/.poetry/env
 poetry completions zsh > $HOME/.zsh/completions/_poetry
 
-echo "Installing python 3.6..."
+echo "Installing python 3.7..."
 pyenv install -s 3.7.5
 
 # Accept Xcode license
-sudo xcodebuild -license accept
+# sudo xcodebuild -license accept
 
 # Make git use diff-so-fancy for every output
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 
-source ~/.zshrc
+# source ~/.zshrc
 
 # VSCode packages
-echo "Installing VSCode Packages..."
-xargs -n 1 code --install-extension < ~/Projects/personal/dotfiles/vscode/extensions.txt
+# echo "Installing VSCode Packages..."
+# xargs -n 1 code --install-extension < ~/Projects/personal/dotfiles/vscode/extensions.txt
 
 echo "==> Done!"

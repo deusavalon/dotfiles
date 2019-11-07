@@ -57,21 +57,6 @@ alias pycclean='find . -name \*.pyc -delete'
 alias travis='docker run -it --rm -v `pwd`:/data -v $HOME/.travis:/root/.travis jpadilla/travis-cli $@'
 alias sshf='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 
-# Usefull aliases from zshrc file
-alias cat="bat"
-alias ccp="clipcopy"
-alias cp="cp -irv"
-alias cpa="clippaste"
-alias diff="diff --color=auto"
-alias grep="grep --color=auto"
-alias pp="prettyping --nolegend"
-alias q="exit"
-alias rm="rm -irv"
-alias tmux="tmux -u"
-alias tmuxm="tmux new-session \; split-window -h \; split-window -v \; attach"
-alias vimrc="vim ~/.vimrc"
-alias zshrc="vim ~/.zshrc"
-
 # Functions
 function ip() {
   IP=$(ipconfig getifaddr en0)

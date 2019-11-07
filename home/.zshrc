@@ -3,8 +3,8 @@ export ZSH="$HOME/.oh-my-zsh"
 export TERM="xterm-256color"
 
 # Options
-setopt hist_ignore_dups
-setopt hist_expire_dups_first
+# setopt hist_ignore_dups
+# setopt hist_expire_dups_first
 
 # General
 DISABLE_AUTO_TITLE="false"
@@ -65,5 +65,5 @@ mkcd ()
     cd -P -- "$1"
 }
 
-DEFAULT_USER=$USER
+DEFAULT_USER="denis"
 prompt_context(){}
