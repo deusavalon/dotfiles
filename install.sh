@@ -23,6 +23,7 @@ git clone https://github.com/powerline/fonts.git
     cd fonts
     ./install.sh
 )
+rm -rf fonts
 
 echo "Installing iTerm2 Shell Integration..."
 curl -sL https://iterm2.com/shell_integration/zsh > ~/.iterm2_shell_integration.zsh

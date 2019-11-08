@@ -108,9 +108,9 @@ dockutil --no-restart --add "/Applications/iTerm.app"
 dockutil --no-restart --add "/Applications/Slack.app"
 dockutil --no-restart --add "/Applications/WhatsApp.app"
 dockutil --no-restart --add "/Applications/Visual Studio Code.app"
-dockutil --no-restart --add "/Applications/Mail.app"
+dockutil --no-restart --add "/System/Applications/Mail.app"
 dockutil --no-restart --add "/Applications/Dashlane.app"
-dockutil --no-restart --add "/Applications/Messages.app"
+dockutil --no-restart --add "/System/Applications/Messages.app"
 dockutil --view list --display folder --add "~/Downloads"
 
 ###############################################################################
