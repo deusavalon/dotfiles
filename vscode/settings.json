@@ -1,8 +1,6 @@
 {
     "docker.showExplorer": false,
-    "editor.fontFamily": "SourceCodePro-Light",
-    "editor.fontSize": 22,
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "editor.rulers": [
         100,
         80
@@ -30,24 +28,23 @@
         "--line-length",
         "88"
     ],
-    "python.formatting.blackPath": "/Users/denis/.local/bin/black",
-    "python.formatting.provider": "black",
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Path": "/Users/denis/.local/bin/flake8",
-    "python.linting.pylintEnabled": false,
-    "python.sortImports.path": "/Users/denis/.local/bin/isort",
-    "telemetry.enableTelemetry": false,
-    "terminal.integrated.shellArgs.osx": [
-        "-l"
-    ],
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Dracula",
-    "workbench.iconTheme": "file-icons-colourless",
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[python]": {
         "editor.tabSize": 4
-    }
+    },
+    "[jinja-html]": {
+
+     },
+     "files.associations": {
+         "*.jinja": "yaml"
+     },
+     "[html]": {
+         "editor.defaultFormatter": "esbenp.prettier-vscode"
+     }
 }

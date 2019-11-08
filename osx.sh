@@ -103,7 +103,6 @@ defaults write com.Apple.Dock show-recents -bool false
 
 # Dockutil configuration
 dockutil --no-restart --remove all
-dockutil --no-restart --add "/Applications/Finder.app"
 dockutil --no-restart --add "/Applications/Google Chrome.app"
 dockutil --no-restart --add "/Applications/iTerm.app"
 dockutil --no-restart --add "/Applications/Slack.app"
@@ -113,7 +112,6 @@ dockutil --no-restart --add "/Applications/Mail.app"
 dockutil --no-restart --add "/Applications/Dashlane.app"
 dockutil --no-restart --add "/Applications/Messages.app"
 dockutil --view list --display folder --add "~/Downloads"
-
 
 ###############################################################################
 # Mail                                                                        #

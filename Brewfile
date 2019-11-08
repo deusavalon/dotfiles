@@ -27,4 +27,6 @@ cask "google-chrome"
 cask "slack"
 cask "whatsapp"
 cask "dashlane"
-
+cask "google-backup-and-sync"
+cask "istat-menus"
+cask "vmware-fusion"
