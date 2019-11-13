@@ -27,3 +27,5 @@ cd dotfiles
 # Symlinks
 ./symlinks.sh
 
+# SSH permissions
+./ssh.sh
