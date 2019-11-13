@@ -10,7 +10,7 @@ function getFilesInDir() {
 function symlinkFilesTo() {
   for F in $(getFilesInDir "$1"); do
     # Make symlink
-    cleanPath=$(echo "$F" | sed 's,^[^/]*/,,'
+    cleanPath=$(echo "$F" | sed 's,^[^/]*/,,')
     echo "- ${2}/${cleanPath} -> ${1}/${cleanPath}"
     ln -sfn "${PWD}/${1}/${cleanPath}" "${2}/${cleanPath}"
   done
