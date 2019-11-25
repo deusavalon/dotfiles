@@ -19,6 +19,7 @@ plugins=(alias-tips
         fast-syntax-highlighting
         git
         globalias
+        z
         zsh-autosuggestions
         zsh-navigation-tools)
 
