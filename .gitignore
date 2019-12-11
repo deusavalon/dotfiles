@@ -26,6 +26,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Ignore brewfile.lock after `brew bundle` installation
+Brewfile.lock.*
+
 home/.bin/circleci
 home/.bin/helm
 home/.bin/sops

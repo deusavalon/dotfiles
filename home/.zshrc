@@ -18,7 +18,6 @@ plugins=(alias-tips
         fancy-ctrl-z
         fast-syntax-highlighting
         git
-        globalias
         z
         zsh-autosuggestions
         zsh-navigation-tools)
@@ -40,7 +39,7 @@ export CFLAGS="$CFLAGS -I$(xcrun --show-sdk-path)/usr/include"
 
 
 # Commands
-export EDITOR=vim 
+export EDITOR=vim
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export GREP_COLOR="1;32"
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Alias: "
